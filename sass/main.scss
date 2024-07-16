@@ -1,0 +1,22 @@
+@import "./utilities/vars";
+@import "./utilities/keyframes";
+@import "./utilities/placeholder.scss";
+@import "./utilities/mixin.scss";
+
+@import "./base/reset";
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/scroll-to-top";
+
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/advanteges";
+@import "./sections/about";
+@import "./sections/team";
+@import "./sections/categories";
+@import "./sections/reviews";
+@import "./sections/regis";
+@import "./sections/footer";
+@import "./sections/modal";
+@import "./sections/menu";
