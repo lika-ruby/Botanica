@@ -1,0 +1,13 @@
+*::selection {
+    background-color: $dark-accent-color;
+    color: $additional-color;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Comfortaa;
+    position: relative;
+}

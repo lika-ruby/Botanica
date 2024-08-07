@@ -16,7 +16,65 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./styles/main.min.css" />
     <title>Botanica</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__cont">
+          <a href="./index.html" class="header__logo">
+            <picture>
+              <source
+                srcset="
+                  ./img/all/header-logo@1x.webp 1x,
+                  ./img/all/header-logo@1x.webp 1x
+                "
+              />
+              <img
+                class="header__img"
+                alt="Логотип сайту Botanica"
+                src="./img/all/header-logo@1x.webp 1x"
+              />
+            </picture>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="" class="header__link">Переваги</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Про нас</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Наша команда</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Категорії</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Відгуки</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Чому ми?</a>
+              </li>
+            </ul>
+            <ul class="header__contacts">
+              <li class="header__contact">
+                <button class="header__btn">Війти</button>
+              </li>
+              <li class="header__contact">
+                <button class="header__btn">Зареєструватись</button>
+              </li>
+            </ul>
+            <button class="header__menu">
+              <svg class="header__icon" width="24" height="24">
+                <use href="./svg/icons.svg#menu"></use>
+              </svg>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
