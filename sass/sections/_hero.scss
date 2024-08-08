@@ -1,0 +1,116 @@
+.hero {
+    &__cont {
+        padding: 262px 18px;
+        border-radius: 50px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgba(0, 23, 7, 0.6),
+                rgba(0, 23, 7, 0.6)),
+            url(../img/mobile/hero/hero-bg@1x-mobile.webp);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(0, 23, 7, 0.6),
+                    rgba(0, 23, 7, 0.6)),
+                url(../img/mobile/hero/hero-bg@2x-mobile.webp);
+        }
+
+        @media screen and (min-width: 768px) {
+            padding: 272px 49px;
+            background-image: linear-gradient(rgba(0, 23, 7, 0.6),
+                    rgba(0, 23, 7, 0.6)),
+                url(../img/tablet/hero/hero-bg@1x-tablet.webp);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(0, 23, 7, 0.6),
+                        rgba(0, 23, 7, 0.6)),
+                    url(../img/tablet/hero/hero-bg@2x-tablet.webp);
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 248px 134px;
+            background-image: linear-gradient(rgba(0, 23, 7, 0.6),
+                    rgba(0, 23, 7, 0.6)),
+                url(../img/desktop/hero/hero-bg@1x-desktop.webp);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(0, 23, 7, 0.6),
+                        rgba(0, 23, 7, 0.6)),
+                    url(../img/desktop/hero/hero-bg@2x-desktop.webp);
+            }
+        }
+    }
+
+    &__title {
+        font-family: "Caveat", sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 1.05;
+        color: $additional-color;
+        margin-bottom: 8px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 72px;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        color: $additional-color;
+        margin-bottom: 14px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 24px;
+        }
+    }
+
+    &__btn {
+        font-family: "Comfortaa", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: $text-color;
+        background-color: $additional-color;
+        padding: 12px 30px;
+        border-radius: 30px;
+        transition: $transition;
+
+        @media screen and (min-width: 768px) {
+            font-size: 20px;
+            padding: 14px 32px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 24px;
+            padding: 14px 42px;
+        }
+
+        &:hover,
+        &:focus {
+            color: $additional-color;
+            background-color: $light-accent-color;
+            transition: $transition;
+        }
+    }
+}

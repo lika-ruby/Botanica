@@ -116,6 +116,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #3B4D3A;
+  transition: all 0.3s ease-in-out;
+}
+.header__link:hover, .header__link:focus {
+  color: #219717;
+  transition: all 0.3s ease-in-out;
 }
 .header__contacts {
   display: flex;
@@ -133,6 +138,7 @@ body {
     border-radius: 30px;
     font-size: 14px;
     padding: 12px 30px;
+    transition: all 0.3s ease-in-out;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -140,6 +146,11 @@ body {
     font-size: 16px;
     padding: 12px 24px;
   }
+}
+.header__btn:hover, .header__btn:focus {
+  color: #042201;
+  border: 2px solid #10550A;
+  transition: all 0.3s ease-in-out;
 }
 @media screen and (min-width: 1200px) {
   .header__menu {
@@ -149,4 +160,109 @@ body {
 .header__icon {
   stroke-width: 2px;
   stroke: #219717;
+  transition: all 0.3s ease-in-out;
+}
+.header__icon:hover, .header__icon:focus {
+  stroke: #10550A;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero__cont {
+  padding: 262px 18px;
+  border-radius: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 23, 7, 0.6), rgba(0, 23, 7, 0.6)), url(../img/mobile/hero/hero-bg@1x-mobile.webp);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__cont {
+    background-image: linear-gradient(rgba(0, 23, 7, 0.6), rgba(0, 23, 7, 0.6)), url(../img/mobile/hero/hero-bg@2x-mobile.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__cont {
+    padding: 272px 49px;
+    background-image: linear-gradient(rgba(0, 23, 7, 0.6), rgba(0, 23, 7, 0.6)), url(../img/tablet/hero/hero-bg@1x-tablet.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__cont {
+    background-image: linear-gradient(rgba(0, 23, 7, 0.6), rgba(0, 23, 7, 0.6)), url(../img/tablet/hero/hero-bg@2x-tablet.webp);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__cont {
+    padding: 248px 134px;
+    background-image: linear-gradient(rgba(0, 23, 7, 0.6), rgba(0, 23, 7, 0.6)), url(../img/desktop/hero/hero-bg@1x-desktop.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__cont {
+    background-image: linear-gradient(rgba(0, 23, 7, 0.6), rgba(0, 23, 7, 0.6)), url(../img/desktop/hero/hero-bg@2x-desktop.webp);
+  }
+}
+.hero__title {
+  font-family: "Caveat", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.05;
+  color: #fff;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 64px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 72px;
+    margin-bottom: 12px;
+  }
+}
+.hero__text {
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .hero__text {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    font-size: 24px;
+  }
+}
+.hero__btn {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #3B4D3A;
+  background-color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .hero__btn {
+    font-size: 20px;
+    padding: 14px 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    font-size: 24px;
+    padding: 14px 42px;
+  }
+}
+.hero__btn:hover, .hero__btn:focus {
+  color: #fff;
+  background-color: #219717;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
